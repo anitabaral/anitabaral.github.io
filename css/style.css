@@ -1,434 +1,188 @@
-body {
-    font-family: 'Playfair Display', serif;
+body, html {
     margin: 0;
     padding: 0;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Full height of the viewport */
+    font-family: 'Times New Roman', Times, serif;
 }
 
-.header-inner {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    color: #fff;
-    text-decoration: none;
-    font-size: 2.5em; /* Logo size */
-    font-weight: bold; /* Make the logo stand out */
-    margin-right: auto;
-}
-
-header {
-    background-color: #2c3e50; /* Dark blue background */
-    color: #fff;
-    padding: 20px 0;    
-}
-
-header nav ul {
-    margin-left: auto;
-    list-style: none;
-    padding: 0;
-    display: flex;
-    margin: 0;
-}
-
-header nav ul li {
-    margin: 0 20px;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.5em; /* Adjust nav link size */
-    transition: color 0.3s ease;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-
-header nav ul li a:hover {
-    color: #3498db; /* Color change on hover */
-}
-
-
-
-@media screen and (max-width: 600px) {
-    header nav ul li {
-        display: block;
-        text-align: center;
-        margin: 10px 0;
-    }
-}
-
-footer {
-    background-color: #2c3e50;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: auto; /* Pushes the footer to the bottom */
-}
-
-.footer-content {
-    max-width: 1200px;
-    margin: auto;
-    padding: 0 20px;
-}
-
-
-footer h2 {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-.social-links {
-    margin-bottom: 20px;
-}
-
-.social-links a {
-    color: #fff;
-    margin: 0 10px;
-    font-size: 24px; /* Adjust the size of the icons */
-    transition: color 0.3s ease;
-}
-
-.social-links a:hover {
-    color: #3498db; /* Color change on hover */
-}
-
-footer p {
-    font-size: 0.75em;
-    line-height: 1.8;
-    margin-bottom: 0; /* Removes margin for a tighter look */
-}
-.logo {
-    color: #fff; /* White color */
-    text-decoration: none;
-    font-size: 2em; /* Increased size */
-    font-weight: bold; /* Bold font */
-    padding: 5px 10px; /* Padding around the text */
-    border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
-    text-transform: uppercase;
-}
-
-.logo:hover {
-    background-color: #2980b9; /* Darker background on hover */
-}
-
-/* Responsive adjustments for smaller screens */
-@media (max-width: 768px) {
-    .footer-content {
-        padding: 0 40px;
-    }
-
-    .social-links a {
-        margin: 0 15px; /* More space between icons on smaller screens */
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .header-inner {
-        flex-direction: column;
-    }
-
-    header nav ul {
-        flex-direction: column;
-    }
-
-    header nav ul li {
-        text-align: center;
-        margin: 10px 0;
-    }
-}
-
-.hero {
-    background-color: #f2f2f2; /* Light grey background */
-    text-align: left;
-    padding: 60px 0px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.profile-container {
-    background-color: #f2f2f2; /* Light grey background */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1200px;
-    width: 100%;
-    margin: auto;
-    padding: 30px 0px; /* Increased padding for more space */
-}
-
-.profile-picture {
-    width: 100%; /* This ensures the image is responsive and scales with its container */
-    max-width: 450px; /* Adjust the max-width to fit your design */
-    height: auto; /* This ensures the aspect ratio is maintained */
-    margin-right: -5%;
-    margin-left: -5%;
-    /* border-radius: 2%; */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow around the picture */
-    /* Removed border-radius to make the image rectangular */
-}
-
-.profile-info {
-    max-width: 55%;
-}
-
-.profile-info h1 {
-    font-size: 2.2em; /* Large font size for name */
-    color: #333; /* Dark text color for name */
-    margin-bottom: 0.5em;
-    font-weight: 200;
-}
-
-.profile-info p {
-    font-size: 1.3em; /* Adjust as needed */
-    margin-bottom: 1em;
-}
-
-.resume-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #3498db; /* Button background color */
-    color: white; /* Button text color */
-    text-decoration: none;
-    border-radius: 5px; /* Rounded corners for the button */
-    transition: background-color 0.3s ease; /* Smooth background transition on hover */
-    font-size: 1.4em;
-}
-
-.resume-button:hover {
-    background-color: #2980b9; /* Darker button background on hover */
-}
-
-.contact-info {
-    background-color: #f2f2f2; /* Light grey background */
-    margin: 40px auto;
-    padding: 40px;
-    text-align: center;
-    border-radius: 8px; /* Optional: Adds rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Adds a subtle shadow for depth */
-    max-width: 600px; /* Adjust width as needed */
-}
-
-.contact-info h1 {
-    font-size: 2.5em;
-    color: #333;
-    margin-bottom: 0.5em; /* Smaller bottom margin */
-}
-
-.contact-details {
-    font-size: 1.5em;
-    color: #333;
-    background-color: #ffffff; /* White background for contact details */
-    padding: 20px;
-    border-radius: 8px; /* Optional: Adds rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
-}
-
-.contact-details p {
-    margin: 10px 0;
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.contact-details p i {
-    margin-right: 10px;
-    color: #3498db; /* Color for icons */
-    width: 30px; /* Ensures icons align neatly */
-    text-align: center;
-}
-
-.contact-details a {
-    color: #3498db; /* Color for links */
-    text-decoration: none;
-    font-weight: bold; /* Makes the text bold */
-}
-
-.contact-details a:hover {
-    text-decoration: underline; /* Underline on hover for better user interaction */
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .contact-info {
-        padding: 20px;
-        margin: 20px;
-    }
-
-    .contact-details {
-        padding: 20px;
-    }
-
-    .contact-details p {
-        flex-direction: column; /* Stack icon and text on smaller screens */
-        text-align: center;
-    }
-}
-
-/* Additional styling for active nav link, if needed */
-nav ul li.active a {
-    color: #3498db; /* Active link color */
-    border-bottom: 2px solid #3498db; /* Underline or other highlight for active state */
-}
-
-
-
-
-.experience-info {
-    background-color: #f2f2f2; /* Light grey background */
-    margin: 40px auto;
-    padding: 40px;
-    text-align: center;
-    border-radius: 8px; /* Optional: Adds rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Adds a subtle shadow for depth */
-    max-width: 600px; /* Adjust width as needed */
-}
-
-.experience-info h1 {
-    font-size: 2.5em;
-    color: #333;
-    margin-bottom: 0.5em; /* Smaller bottom margin */
-}
-
-.experience-details {
-    font-size: 1em;
-    color: #333;
-    background-color: #ffffff; /* White background for experience details */
+    flex-direction: row; /* Stack children horizontally */
+    background-color: #f8f8f8;    
     padding: 20px;
-    border-radius: 8px; /* Optional: Adds rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
+
+
+}
+.profile{
+    flex-direction: column;
 }
 
-.experience-details .research-item {
-    background-color: #ffffff; /* White background for each research item */
-    padding: 20px;
-    margin-bottom: 20px; /* Space between research items */
-    border-radius: 8px; /* Optional: Adds rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
+.profile-pic {
+    width: 250px; /* Adjust the width as needed */
+    height: 250px; /* Adjust the height as needed */
+    border-radius: 50%;
+    margin-right: 20px; /* Adjust the spacing between the image and text as needed */
+    object-fit: cover; /* This will ensure the image covers the area without losing aspect ratio */
 }
 
-.experience-details .research-item h2 {
-    color: #3498db; /* Color for research item titles */
-    margin-bottom: 10px;
-}
-
-.experience-details .research-item p {
-    /* font-size: 0.5em; */
-    margin-bottom: 10px;
-    text-align: left; /* Align text to the left */
-}
-
-.experience-details .research-item a {
-    color: #3498db; /* Color for links */
-    text-decoration: none;
-}
-
-.experience-details .research-item a:hover {
-    text-decoration: underline; /* Underline on hover for better user interaction */
-}
-
-/* ... other styles ... */
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .experience-info {
-        padding: 20px;
-        margin: 20px;
-    }
-
-    .experience-details {
-        padding: 20px;
-    }
-
-    .experience-details .research-item {
-        flex-direction: column; /* Stack icon and text on smaller screens */
-        text-align: center;
-    }
-}
-
-/* Additional styling for active nav link, if needed */
-nav ul li.active a {
-    color: #3498db; /* Active link color */
-    border-bottom: 2px solid #3498db; /* Underline or other highlight for active state */
-}
-
-.ex-info {
-    background-color: #f2f2f2; /* Light grey background */
-    margin: 40px auto;
-    padding: 40px;
-    text-align: left; /* Align text to the left */
-    border-radius: 8px; /* Adds rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
-    max-width: 800px; /* Adjust width as needed */
-}
-
-.ex-info h1 {
-    font-size: 2.5em;
-    color: #333;
-    margin-bottom: 1em; /* Bottom margin for the section title */
-}
-
-.ex-details {
-    background-color: #ffffff; /* White background for details */
-    padding: 20px;
-    border-radius: 8px; /* Adds rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
-    margin-bottom: 20px; /* Space between experience items */
-}
-
-.ex-item h2 {
-    font-size: 1.5em;
-    color: #3498db; /* Color for job titles */
+.intro-text h1 {
+    font-size: 2em; /* Adjust the size as needed */
     margin-bottom: 0.5em;
 }
 
-.ex-item p, .ex-item ul {
+.intro-text p {
+    font-size: 1.5em; /* Adjust the size as needed */
+    color: #666; /* This is a light grey color similar to what's used on Karpathy's site */
+}
+.timeline {
+    
+    position: relative;
+    padding-left: 400px; /* Increase this value to move the timeline further from the left */
+    margin-top: 20px;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: 19.6%;
+    background-color: #333; /* Dot color */
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    top: 10px; /* Adjust based on the line height of the date */
+}
+
+.timeline-date {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.timeline-content {
+    /* margin-left: auto;
+    margin-right: auto; */
+    max-width: 800px; /* or whatever maximum width you prefer */
+    /* justify-content: center; */
+    margin-bottom: 40px;
+}
+
+.timeline-content h3 {
+    font-size: 1.25em;
+    margin-top: 0;
+}
+
+.timeline-content h4 {
     font-size: 1em;
-    margin-bottom: 1em;
+    color: #666;
+    margin-top: 5px;
+}
+.timeline-content p {
+    justify-content: center;
+
 }
 
-.ex-item ul {
-    list-style-type: circle; /* Or 'none' if you prefer no bullets */
-    padding-left: 20px; /* Indent for list items */
+/* Optional: Add a line connecting the dots */
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 20%; /* Adjust this value to align with the center of the dots */
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: #333; /* Line color */
 }
 
-.ex-item ul li {
-    margin-bottom: 0.5em; /* Space between list items */
+.social-icons {
+    /* text-align: center; Center the icons container */
+    padding: 0 0; /* Add some padding above and below the icons */
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .ex-info {
-        padding: 20px;
-        margin: 20px;
-    }
-
-    .ex-details {
-        padding: 20px;
-    }
-
-    /* Ensure .ex-item styles are also responsive if necessary */
+.social-icon {
+    margin: 0 3px; /* Space out the icons */
+    color: #333; /* Icon color */
+    transition: color 0.3s; /* Smooth transition for hover effect */
 }
 
-/* Additional styling for active nav link, if needed */
-nav ul li.active a {
-    color: #3498db; /* Active link color */
-    border-bottom: 2px solid #3498db; /* Underline or other highlight for active state */
+.social-icon:hover {
+    color: #007bff; /* Color when icon is hovered over */
 }
 
-main {
-    flex: 1;
+.certifications {
+    padding: 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+    
 }
 
+.certifications h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.certification-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Creates a responsive grid layout */
+    gap: 20px; /* Space between items */
+    padding: 0;
+    list-style: none;
+}
+
+.certification {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.certification img {
+    width: 100%; /* Adjust the width as needed */
+    height: auto; /* Adjust the height as needed */
+    border: 1px solid #ccc; /* A light grey border around the image */
+    border-radius: 10px
+}
+.projects {
+    padding: 20px;
+    /* background-color: #f8f8f8; */
+    text-align: left;
+    margin-bottom: 10px; /* Reduced bottom margin */
+
+}
+
+.projects h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.projects ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.projects li {
+    margin-bottom: 15px;
+}
+
+.project-title {
+    font-weight: bold;
+}
+
+.project-technologies {
+    font-style: italic;
+    color: #666;
+}
+
+.project-description {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.project-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
