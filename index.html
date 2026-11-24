@@ -4,153 +4,205 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anita Baral</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+    <meta name="description" content="Anita Baral, AI Software Engineer building LLM, RAG and agent applications on Azure.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
-        <img src="data/profile_crop.jpg" alt="Anita Baral" class="profile-pic">
-        <div class="profile">
-        <div class="intro-text">
-            <h1>Anita Baral✨</h1>
-            <p>I like analyzing structured and unstructured data 
-                <br> and develop machine learning models for them ☄️💥
+    <header class="site-header">
+        <a href="#top" class="logo">~/anita</a>
+        <nav>
+            <a href="#about">about</a>
+            <a href="#experience">experience</a>
+            <a href="#research">research</a>
+            <a href="#projects">projects</a>
+            <a href="#contact">contact</a>
+        </nav>
+    </header>
+
+    <main id="top">
+        <section class="hero">
+            <p class="prompt"><span class="dim">$</span> whoami</p>
+            <h1>Anita Baral<span class="cursor" aria-hidden="true"></span></h1>
+            <p class="tagline">AI Software Engineer building LLM, RAG and agent applications on Azure.</p>
+            <ul class="links">
+                <li><a href="https://github.com/anitabaral" target="_blank" rel="noopener">github</a></li>
+                <li><a href="https://www.linkedin.com/in/anita-baral" target="_blank" rel="noopener">linkedin</a></li>
+                <li><a href="https://scholar.google.com/citations?user=BwCggdUAAAAJ&hl=en" target="_blank" rel="noopener">scholar</a></li>
+                <li><a href="mailto:baralanita2@gmail.com">email</a></li>
+                <li><a href="data/Resume_AnitaBaral.pdf" target="_blank">resume.pdf</a></li>
+            </ul>
+        </section>
+
+        <section id="about">
+            <h2><span class="dim">#</span> about</h2>
+            <p>
+                I have over five years of experience in AI and software engineering. Today I build production
+                LLM, retrieval augmented generation and agent applications on Azure, from the API and vector search
+                to the front end, evaluations and observability.
             </p>
-        </div>
-        <div class="social-icons">
-            <a href="https://www.linkedin.com/in/anita-baral/" target="_blank" class="social-icon">
-                <i class="fab fa-linkedin fa-2x"></i>
-            </a>
-            <a href="https://github.com/anitabaral" target="_blank" class="social-icon">
-                <i class="fab fa-github fa-2x"></i>
-            </a>
-            <a href="baralanita2@gmail.com" target="_blank" class="social-icon">
-                <i class="fas fa-envelope fa-2x"></i>
-            </a>
-            <a href="https://scholar.google.com/citations?user=BwCggdUAAAAJ&hl=en" class="social-icon" target="_blank" title="Google Scholar">
-                <i class="fas fa-graduation-cap fa-2x"></i>
-            </a>
-        </div>
-    </div>
-    </div>
-    <div class="timeline">
-        <div class="timeline-item" id="experience1">
-            <div class="timeline-dot"></div>
-            <div class="timeline-date">2023 - Present</div>
-            <div class="timeline-content">
-                <h3>Graduate Researcher</h3>
-                <h4>Miami University</h4>
-                <p>Research: Audio Generation with Embedded Video Context (Multimodal Content Generation). 
-                    <br>Implementing a latent diffusion model, integrated with ResNet embeddings for guided audio wave-form generation.</li>
-                    Optimizing machine learning workflows using Weights and Biases (wandb) for efficient deep learning model training,
-                    parameter tuning, and performance tracking on university servers.</p>
+            <p>
+                Before that I trained models for speech, vision and NLP. My research includes neural text to speech
+                for the Myaamia language, published at AmericasNLP 2026.
+            </p>
+        </section>
+
+        <section id="experience">
+            <h2><span class="dim">#</span> experience</h2>
+            <ol class="timeline">
+                <li>
+                    <div class="when">Jun 2025 to now</div>
+                    <div class="what">
+                        <h3>AI Software Engineer <span class="at">@ Lithko Contracting</span></h3>
+                        <p>
+                            Build and deploy LLM-backed RAG and agent applications: a LangGraph and FastAPI service with
+                            PostgreSQL vector search, citations and guardrails, a React TypeScript client with Entra ID
+                            sign-in, LLM-as-a-judge evaluations and Langfuse tracing. Helped define the company's shared
+                            AI platform on Azure and build Copilot Studio agents and data pipelines.
+                        </p>
+                        <ul class="tags">
+                            <li>Python</li><li>FastAPI</li><li>LangGraph</li><li>pgvector</li><li>React</li>
+                            <li>TypeScript</li><li>Azure</li><li>Bicep</li><li>GitHub Actions</li><li>Langfuse</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="when">May 2024 to May 2025</div>
+                    <div class="what">
+                        <h3>Artificial Intelligence Intern <span class="at">@ Lithko Contracting</span></h3>
+                        <p>
+                            Built a RAG system over video transcripts, served it through a FastAPI app and a
+                            Microsoft Teams chatbot, and deployed it on Azure with Docker.
+                        </p>
+                        <ul class="tags">
+                            <li>LangChain</li><li>Pinecone</li><li>Azure Video Indexer</li><li>FastAPI</li><li>Docker</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="when">Aug 2023 to May 2025</div>
+                    <div class="what">
+                        <h3>Graduate Assistant and Researcher <span class="at">@ Miami University</span></h3>
+                        <p>
+                            Built full stack features and REST APIs for the Myaamia Center, and researched a neural
+                            text to speech system for the Myaamia language, training FastSpeech, Glow-TTS and VITS
+                            on 10.4 hours of speech.
+                        </p>
+                        <ul class="tags">
+                            <li>PyTorch</li><li>TTS</li><li>CUDA</li><li>REST APIs</li><li>Docker</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="when">Jul 2021 to Aug 2023</div>
+                    <div class="what">
+                        <h3>Software Engineer, AI <span class="at">@ LeapFrog Technology</span></h3>
+                        <p>
+                            Built NLP models and an HR question answering Slackbot, object detection and tracking
+                            pipelines that reached 97% count accuracy, and data pipelines from AWS S3 to Snowflake
+                            with dbt models and customer analytics.
+                        </p>
+                        <ul class="tags">
+                            <li>Python</li><li>YOLO</li><li>DeepSORT</li><li>AWS</li><li>Snowflake</li><li>dbt</li><li>SQL</li>
+                        </ul>
+                    </div>
+                </li>
+            </ol>
+        </section>
+
+        <section id="research">
+            <h2><span class="dim">#</span> publications</h2>
+            <ul class="pubs">
+                <li>
+                    <a href="https://aclanthology.org/2026.americasnlp-6.1/" target="_blank" rel="noopener">
+                        Neural Text-to-Speech for Myaamia: Speech Synthesis for an Indigenous Algonquian Language</a>
+                    <p class="meta">AmericasNLP 2026 &middot; <strong>A. Baral</strong>, J. Femiani, H. Lockwood, D. Inclezan, B. Bhandari</p>
+                </li>
+                <li>
+                    <span class="title">ASP for Language Documentation and Reclamation: A Derivational Stemming Tool for Myaamia</span>
+                    <p class="meta">PADL 2025 &middot; D. Inclezan, H. Lockwood, <strong>A. Baral</strong>, J. Sharma, P. Shrestha</p>
+                </li>
+                <li>
+                    <span class="title">An Exploration of Datalog Applications to Language Documentation and Reclamation</span>
+                    <p class="meta">Datalog 2.0 Workshop 2024 &middot; <strong>A. Baral</strong>, P. Shrestha, J. Sharma, H. Lockwood, D. Inclezan</p>
+                </li>
+                <li>
+                    <a href="https://link.springer.com/chapter/10.1007/978-981-16-9885-9_10" target="_blank" rel="noopener">
+                        Automatic License Plate Recognition for Distorted Images Using SRGAN</a>
+                    <p class="meta">CHSN 2021, Springer 2022 &middot; <strong>A. Baral</strong>, A. Koirala, S. Pantha, R. Pokhrel, B. H. Paudel</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2><span class="dim">#</span> projects</h2>
+            <div class="cards">
+                <article class="card">
+                    <h3>Myaamia text to speech</h3>
+                    <p>Neural TTS for an Indigenous language, comparing FastSpeech, Glow-TTS and VITS. VITS gave the best spectral and prosodic accuracy.</p>
+                    <p class="stack">PyTorch &middot; VITS &middot; wandb</p>
+                </article>
+                <article class="card">
+                    <h3>Audio from video context</h3>
+                    <p>A generative model using a state space model conditioned on image spectrograms to produce long, context-aware audio.</p>
+                    <p class="stack">PyTorch &middot; SSM &middot; diffusion</p>
+                </article>
+                <article class="card">
+                    <h3>Nepali license plate recognition</h3>
+                    <p>Detects and reads Nepali plates with WPOD-NET, contour segmentation and SVMs at 90% accuracy, trained on a dataset the team built.</p>
+                    <p class="stack">TensorFlow &middot; OpenCV &middot; <a href="https://github.com/anitabaral/Automatic-License-Plate-Recognition-System-for-Distorted-Images" target="_blank" rel="noopener">source</a></p>
+                </article>
+                <article class="card">
+                    <h3>Single image super resolution</h3>
+                    <p>An SRGAN trained on license plate images to sharpen distorted plates before recognition, improving accuracy by 40%.</p>
+                    <p class="stack">TensorFlow &middot; GAN &middot; <a href="https://github.com/anitabaral/Single-Image-Super-Resolution" target="_blank" rel="noopener">source</a></p>
+                </article>
             </div>
-        </div>
-        <div class="timeline-item" id="experience2">
-            <div class="timeline-dot"></div>
-            <div class="timeline-date">2023 - Present</div>
-            <div class="timeline-content">
-                <h3>Graduate Assistant</h3>
-                <h4>Myaamia Center, Miami University</h4>
-                <p>
-                    Develop Myaamia language Text-To-Speech system, using Variational Autoencoder with Adversarial Learning. Conducted training sessions on RedHawk Server with tmux and utilized Weights & Biases for performance
-                    tracking and metrics analysis. Configured server for GPU utilization, managing CUDA and CuDNN dependencies.</p>
-                    </div>       
-         </div>
-         <div class="timeline-item" id="experience3">
-            <div class="timeline-dot"></div>
-            <div class="timeline-date">2021 - 2023</div>
-            <div class="timeline-content">
-                <h3>Software Engineer, Data/AI</h3>
-                <h4>LeapFrog Technology</h4>
-                <p>
-                    Leveraged dbt and SQL (window functions, optimized joins) for data transformation to obtain actionable insights. Created data pipeline using AWS (RDS, S3, EC2) for scalable processing of large traffic video datasets,
-                    increasing project's data management scalability. Deployed custom-trained YOLOv5 and DeepSORT on OAK and Raspberry Pi for integrated real-time Multi-Object
-                    Detection and Tracking (MOT). Led client sessions and ensured timely and budget-compliant delivery of accurate user stories.</p>
-                    </div>       
-         </div>
-         <div class="timeline-item" id="experience4">
-            <div class="timeline-dot"></div>
-            <div class="timeline-date">2021 - 2021</div>
-            <div class="timeline-content">
-                <h3>Machine Learning Intern</h3>
-                <h4>LeapFrog Technology</h4>
-                <p>
-                    Developed Python Slackbot using Azure's Question Answering API to improve access to company information. Collaborated with AI and Development team with Jira and Kanban for Agile practices.
-                </p>                    </div>       
-         </div>
-         
-    </div>
-    <div class="publications">
-        <h2>Publication</h2>
-        <ul>
-            <li>
-                <a href="https://link.springer.com/chapter/10.1007/978-981-16-9885-9_10">
-                    <p class="publication-title">Automatic License Plate Recognition for Distorted Images Using SRGAN</p></a>
-                <p class="publication-description">Primary author of paper enhancing Automatic License Plate Recognition (ALPR) 
-                    systems using Super-resolution Generative Adversarial Network (SRGAN) for improved image quality and accuracy.</p>
-            </li>
-        </ul>
-    </div>
-    <div class="certifications">
-        <h2>Certifications</h2>
-        <div class="certification-grid">
-            <a href="https://www.coursera.org/account/accomplishments/certificate/4ZECK7XEY3NE" target="_blank" class="certification">
-                <img src="data/Coursera_4ZECK7XEY3NE_page-0001.jpg" alt="Certificate Description 1">
-                <p>Machine Learning</p>
-            </a>
-            <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/THJPL4FAT6AP" target="_blank" class="certification">
-                <img src="data/Coursera_THJPL4FAT6AP_page-0001.jpg" alt="Certificate Description 2">
-                <p>Deep Learning</p>
-            </a>
-            <a href="https://graduation.udacity.com/confirm/PHJGMFHG" target="_blank" class="certification">
-                <img src="data/udacity.svg" alt="Certificate Description 2">
-                <p>AWS Machine Learning Focundations</p>
-            </a>
-            <a href="https://www.coursera.org/account/accomplishments/certificate/SQ6GNJFPHJZF" target="_blank" class="certification">
-                <img src="data/Coursera SQ6GNJFPHJZF_page-0001.jpg" alt="Certificate Description 2">
-                <p>Computer Vision</p>
-            </a>
-            <a href="https://www.coursera.org/account/accomplishments/certificate/CWBQNABW3TMN" target="_blank" class="certification">
-                <img src="data/Coursera CWBQNABW3TMN_page-0001.jpg" alt="Certificate Description 2">
-                <p>Introduction to Git and Github</p>
-            </a>
-            <a href="https://www.hackerrank.com/certificates/be58699281bc" target="_blank" class="certification">
-                <img src="data/sql_intermediate certificate_page-0001.jpg" alt="Certificate Description 2">
-                <p>SQL</p>
-            </a>
+        </section>
 
-        </div>
-    </div>
-    <div class="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li>
-                <p class="project-title">Audio Generation With Embedded Video Context</p>
-                <p class="project-technologies">Technologies Used: Convolutional Neural Networks (CNN), Diffusion Model, Weights and Biases, PyTorch, Python </p>
-                <p class="project-description">Leveraged latent diffusion model for audio generation and provided conditionality in the form
-                    of embeddings (ResNet, CLIP) for audio generation conditioned on images.</p>
-            </li>
-            <li>
-                <p class="project-title">Automatic License Plate Recognition (ALPR) for Nepali License Plates</p>
-                <p class="project-technologies">Technologies Used: Python, TensorFlow, OCR, CNNs, OpenCV</p>
-                <p class="project-description">Dveloped an ALPR system able to detect, localize Nepali license plates and recognize the Nepali numbers and letters in them by training in a custom dataset created by the team itself.</p>
-                <a href="https://github.com/anitabaral/Automatic-License-Plate-Recognition-System-for-Distorted-Images" target="_blank" class="project-link">View Project</a>
-            </li>
-                     <li>
-                <p class="project-title">Single Image Super Resolution (SISR)</p>
-                <p class="project-technologies">Technologies Used: Python, TensorFlow, Generative Adversarial Network (GAN), CNNs</p>
-                <p class="project-description">Implemented Super-Resolution Using a Generative Adversarial Network (SRGAN) model, trained on Google Colab in several iterations on the custom license plates dataset</p>
-                <a href="https://github.com/anitabaral/Single-Image-Super-Resolution" target="_blank" class="project-link">View Project</a>
-            </li>
-        </ul>
-    </div>
-    
+        <section id="skills">
+            <h2><span class="dim">#</span> skills</h2>
+            <dl class="skills">
+                <dt>ai</dt><dd>LLMs, RAG, agents, NLP, transformers, text to speech, diffusion</dd>
+                <dt>backend</dt><dd>Python, FastAPI, LangGraph, LangChain, SQL, PostgreSQL (pgvector), Snowflake</dd>
+                <dt>frontend</dt><dd>React, TypeScript, Vite, Streamlit</dd>
+                <dt>cloud</dt><dd>Azure (Container Apps, OpenAI, Foundry, Static Web Apps), Bicep, GitHub Actions, Docker, AWS</dd>
+                <dt>ml</dt><dd>PyTorch, TensorFlow, scikit-learn, pandas, Langfuse, wandb, MLflow</dd>
+            </dl>
+        </section>
 
-    
-    
-    
+        <section id="education">
+            <h2><span class="dim">#</span> education</h2>
+            <ul class="plain">
+                <li><strong>M.S. Computer Science</strong>, Miami University, 2025</li>
+                <li><strong>B.E. Computer Engineering</strong>, Tribhuvan University, 2021</li>
+                <li>Graduate Students' Achievement Award, Miami University, 2024</li>
+            </ul>
+        </section>
+
+        <section id="certifications">
+            <h2><span class="dim">#</span> certifications</h2>
+            <ul class="plain">
+                <li><a href="data/certificates/azure-ai-app-agent-developer.pdf" target="_blank">Azure AI App and Agent Developer</a>, MAX Technical Training, 2026</li>
+                <li><a href="https://coursera.org/verify/LXKT6HWSU1CF" target="_blank" rel="noopener">Building Generative AI Apps to Talk to Your Data</a>, Snowflake, 2026</li>
+                <li><a href="https://coursera.org/verify/G7YX9LDC4VHF" target="_blank" rel="noopener">Introduction to Generative AI with Snowflake</a>, Snowflake, 2025</li>
+                <li><a href="data/certificates/power-up-intro-to-agents.png" target="_blank">Intro to Agents, Level 1</a>, Microsoft Power Up Program</li>
+                <li><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/THJPL4FAT6AP" target="_blank" rel="noopener">Deep Learning Specialization</a>, Coursera</li>
+                <li><a href="https://www.coursera.org/account/accomplishments/certificate/4ZECK7XEY3NE" target="_blank" rel="noopener">Machine Learning</a>, Coursera</li>
+                <li><a href="https://graduation.udacity.com/confirm/PHJGMFHG" target="_blank" rel="noopener">AWS Machine Learning Foundations</a>, Udacity</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2><span class="dim">#</span> contact</h2>
+            <p>The best way to reach me is email: <a href="mailto:baralanita2@gmail.com">baralanita2@gmail.com</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p><span class="dim">$</span> exit 0 &middot; &copy; 2026 Anita Baral</p>
+    </footer>
 </body>
 </html>
